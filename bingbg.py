@@ -1,3 +1,4 @@
+#!/bin/python
 
 import re, urllib, os
 from config import conf
@@ -44,6 +45,8 @@ def checkpath(name):
     else:
       return conf['des']+name
   else:
+    print "The given directory doesn't exist or you do no have the write permissions."
+    print "Downloading to your home/Pictures directory."
     return '~/Pictures/'+name
 
 if __name__=='__main__':
