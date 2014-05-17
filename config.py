@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/python
 
 conf = {
 	# The resolution to download (if the given resolution is not found, 

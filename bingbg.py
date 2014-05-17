@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/python
 
 import re, urllib, os
 from config import conf
