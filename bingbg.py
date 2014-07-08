@@ -9,7 +9,7 @@ def getimg(FILE):
   os.remove('.temp')
   s=re.search(r"g_img={\w*url\:\'(.*\.jpg)\'.*id\:\'bgDiv\',",cont)
   if not s:
-    print "Sorry, there was some problems, please try again later."
+    print "Sorry, there were some problems, please try again later."
     return
   img='http://bing.com'
   img+=s.group(1)
@@ -23,7 +23,6 @@ def getimg(FILE):
     print "Downloading",name
     urllib.urlretrieve(img,path)
     print "Done. Go check it out."
-
 
 def getres(img):
   s=re.search(r'_(\d\d\d\d*x\d\d\d\d*)',img)
