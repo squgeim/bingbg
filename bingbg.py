@@ -52,6 +52,6 @@ if __name__=='__main__':
   print "Asking Bing if it has anything new for me..."
   try:
     urllib.urlretrieve('http://bing.com','.temp')
+    getimg('.temp')
   except:
     print "Sorry man, couldn't reach Bing. Something wrong with your connection?"
-  getimg('.temp')
