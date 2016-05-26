@@ -5,7 +5,12 @@ A simple Python program to download today's Bing wallpaper.
 
 Requirements
 ------
-You just need to have Python 2.7 in your system (Linux, Windows, Mac OS).
+
+- Python 2.7
+- BeautifulSoup4
+- Selenium
+- CSSUtils
+- Mozilla Firefox
 
 Working
 ------
