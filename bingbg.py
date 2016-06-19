@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/env python2
 
 import re, os, urllib
 from config import conf
@@ -71,15 +71,15 @@ class bingBg():
       return '~/Pictures/'
       
 if __name__ == '__main__':
-  print "Asking Bing if it has anything new for me..."
+  print("Asking Bing if it has anything new for me...")
   try:
     app = bingBg()
     if not app.has_new():
-      print 'Nothing new. See ya later.'
+      print('Nothing new. See ya later.')
     else:
-      print 'Downloading ' + app.get_image_name() + '...'
+      print('Downloading %s ... ' % app.get_image_name())
       app.download_image()
-      print 'Done. Go check it out.'
+      print('Done. Go check it out.')
   except:
-    print 'There was a problem reaching Bing.'
+    print('There was a problem reaching Bing.')
       
