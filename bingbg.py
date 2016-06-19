@@ -77,7 +77,7 @@ if __name__ == '__main__':
     if not app.has_new():
       print('Nothing new. See ya later.')
     else:
-      print('Downloading %s ... ' % app.get_image_name())
+      print('Downloading {} ... '.format(app.get_image_name()))
       app.download_image()
       print('Done. Go check it out.')
   except:
